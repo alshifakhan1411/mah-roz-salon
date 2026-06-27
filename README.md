@@ -16,7 +16,7 @@ A modern and responsive salon landing page built with React.
 - HTML
 
 ## Live Demo
-(Coming Soon)
+https://mah-roz-salon-rzf8.vercel.app/
 
 ## Author
 Alshifa Khan

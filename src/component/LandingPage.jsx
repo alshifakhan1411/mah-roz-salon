@@ -1,4 +1,4 @@
-import ImageUploader from "./ImageUploader";
+
 import React, { useEffect, useState, useRef } from 'react';
 import {
   Crown, Palette, Sparkles, Eye, Scissors, Leaf, Hand, Feather,
@@ -238,8 +238,7 @@ const LandingPage = () => {
             <div className="footer-logo">{salonInfo.name}</div>
             <p>{salonInfo.tagline}</p>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Facebook">FB</a>
-              <a href="#" className="social-link" aria-label="Instagram">IG</a>
+            
               <a href={salonInfo.whatsappLink} className="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">WA</a>
             </div>
           </div>

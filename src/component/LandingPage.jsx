@@ -184,28 +184,36 @@ const LandingPage = () => {
       </section>
 
       {/* ── GALLERY ────────────────────────────────────────── */}
- <div className="gallery-grid">
-  {galleryItems.map((item, i) => (
-    <div
-      key={item.id}
-      className={`gallery-item observe reveal-delay-${(i % 3) + 1}`}
-    >
-      <img
-        src={item.image}
-        alt={item.label}
-        className="gallery-image"
-      />
+ {/* ── GALLERY ────────────────────────────────────────── */}
+<section id="gallery" className="section observe" style={{ background: "var(--white)" }}>
+  <div className="section-header">
+    <h2>Our Gallery</h2>
+    <p>Take a look at some of our beautiful work</p>
+  </div>
 
-      <div className="gallery-category">
-        {item.category}
-      </div>
+  <div className="gallery-grid">
+    {galleryItems.map((item, i) => (
+      <div
+        key={item.id}
+        className={`gallery-item observe reveal-delay-${(i % 3) + 1}`}
+      >
+        <img
+          src={item.image}
+          alt={item.label}
+          className="gallery-image"
+        />
 
-      <div className="gallery-label">
-        {item.label}
+        <div className="gallery-category">
+          {item.category}
+        </div>
+
+        <div className="gallery-label">
+          {item.label}
+        </div>
       </div>
-    </div>
-  ))}
-</div>
+    ))}
+  </div>
+</section>
       {/* ── BOOKING / CONTACT ──────────────────────────────── */}
       <section id="contact" className="booking-section observe">
         <div className="booking-content">
